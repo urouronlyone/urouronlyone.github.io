@@ -36,7 +36,7 @@ copyright_url            : # "copyright" URL, defaults to site.url
 comments:
   provider               : "disqus" # false (default), "disqus", "discourse", "facebook", "staticman", "staticman_v2", "utterances", "giscus", "custom"
   disqus:
-    shortname            : "urouronlyone" # discus 사이트에 설정한 ''와 동일해야함
+    shortname            : "urouronlyone"
   discourse:
     server               : # https://meta.discourse.org/t/embedding-discourse-comments-via-javascript/31963 , e.g.: meta.discourse.org
   facebook:
@@ -105,10 +105,10 @@ social:
 
 # Analytics
 analytics:
-  provider               : # false (default), "google", "google-universal", "google-gtag", "custom"
+  provider               : "google-gtag" # false (default), "google", "google-universal", "google-gtag", "custom"
   google:
-    tracking_id          :
-    anonymize_ip         : # true, false (default)
+    tracking_id          : G-1P9E0YGL8Z # GA의측정 ID
+    anonymize_ip         : false
 
 
 # Site Author
@@ -117,7 +117,7 @@ author:
   avatar           : # path of avatar image, e.g. "/assets/images/bio-photo.jpg"
   bio              : "영웅의 기술 메모 블로그입니다."
   location         : "Somewhere"
-  email            : urouronlyone@gmail.com
+  email            : "urouronlyone@gmail.com"
   links:
     - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
@@ -321,6 +321,6 @@ defaults:
       layout: single
       author_profile: true
       read_time: true
-      comments: true # 댓글 기능
+      comments: true
       share: true
       related: true
